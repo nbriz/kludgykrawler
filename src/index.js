@@ -1,5 +1,8 @@
-var buttons = require('sdk/ui/button/action');
+var buttons 	= require('sdk/ui/button/action');
+var tabs 		= require("sdk/tabs");
+var pageMod 	= require("sdk/page-mod");
 
+// create the browser button that shows up to the right of the address bar
 var button = buttons.ActionButton({
 	id: "kludgykrawler",
 	label: "Kludgy Krawler",
@@ -12,4 +15,19 @@ var button = buttons.ActionButton({
 	onClick: function(state){
 		// do something 
 	}
+});
+
+
+// when a new tab||page is loaded...
+tabs.on('ready', function(tab) {
+	// ...garble the hell out of it
+	tab.attach({
+		contentScriptFile: './garble.js'
+	});
+});
+
+
+pageMod.PageMod({
+	include: "*",
+	contentStyleFile: './garble.css'
 });
