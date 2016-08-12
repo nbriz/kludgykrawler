@@ -1,39 +1,68 @@
-img {
-	-webkit-animation:dumb 1s linear infinite;
-	-moz-animation:dumb 1s linear infinite;
-	animation:dumb 1s linear infinite;
+div {
+	animation:bgfudge 1s linear infinite;
+    background-size: 100% 100%;
 }
 
-@keyframes dumb {
+body{animation:mrbodymachine 1s linear infinite;}
 
-}
 
-@keyframes mymove {
-    from {
-        position: 0% 0px;
-    }
-    to {
-        position: 0px -300%;
-    }
+@keyframes bgfudge {
+    from {background-position: 0% 0px;}
+    to {background-position: 0px -300%;}
 }
-@-webkit-keyframes mymove {
-    from {
-        position: 0% 0px;
-    }
-    to {
-        position: 0px -300%;
-    }
-}
-
-div {border:1px solid red;}
 
 
 img{
   animation: ani1 linear .2s infinite;
 }
 
+p{
+  animation: txt1 linear 8s infinite;
+}
 
+@keyframes txt1{
+    from {letter-spacing: 0em;}
+    to {letter-spacing: 10em;}
+}
 
+h1{
+  animation: headbutt linear .9s infinite;
+}
+
+h2{
+  animation: headbutt2 linear .6s infinite;
+}
+
+@keyframes headbutt{
+    from {font-size: .1em;}
+    to {font-size: 2em;}
+}
+
+@keyframes headbutt2{
+    from {font-size: .1em; color:white;}
+    to {font-size: 2em; color: black;}
+}
+
+li:nth-of-type(n+1) {animation:li1 linear 4s infinite;  }
+li:nth-of-type(n+2) {animation:li2 linear .8s infinite; }
+li:nth-of-type(n+3) {animation:li3 linear .2s infinite; }
+li:nth-of-type(n+4) {animation:li4 linear .9s infinite; }
+@keyframes li1{
+    from {letter-spacing: 0em;}
+    to {letter-spacing: 2em;}
+}
+@keyframes li2{
+    from {letter-spacing: 2em;}
+    to {letter-spacing: .1em;}
+}
+@keyframes li3{
+    from {letter-spacing: 0.2em;}
+    to {letter-spacing: 1.1em;}
+}
+@keyframes li4{
+    from {letter-spacing: 0em;}
+    to {letter-spacing: 1em;}
+}
 img:nth-of-type(n+1) {transform: rotate(100deg);animation: ani1 linear .2s infinite; z-index: 666}
 img:nth-of-type(n+2) {transform: rotate(-3deg);animation: ani2 linear .2s infinite; z-index: 60}
 img:nth-of-type(n+3) {transform: rotate(-30deg);animation: ani3 linear .2s infinite; z-index: 66}
@@ -41,6 +70,16 @@ img:nth-of-type(n+4) {transform: rotate(-180deg);animation: ani4 linear .2s infi
 img:nth-of-type(n+5) {transform: rotate(90deg);animation: ani5 linear .2s infinite; z-index: 6696}
 img:nth-of-type(n+6) {transform: rotate(10deg);animation: ani6 linear .2s infinite; z-index: 66600}
 img:nth-of-type(n+7) {transform: rotate(100deg);animation: ani1 linear .2s infinite; z-index: 666}
+
+@keyframes mrbodymachine{
+  0% {transform:  translate(0px,0px)  rotate(0deg) scaleX(100.00)scaleY(100.00) ;}
+  2% {transform:  translate(-328px,1px)  rotate(90deg) scaleX(3.24) ;}
+  4% {transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00)scaleY(1.00) ;}
+  25% {transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00)scaleY(1.00) ;}
+  29% {transform:  translate(-328px,1px)  rotate(90deg) scaleX(3.24) ;}
+  30% {transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00)scaleY(1.00) ;}
+  100% {transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00)scaleY(1.00) ;}
+}
 
 @keyframes ani1{
   0% {transform:  translate(0px,0px)  rotate(0deg) scaleX(100.00)scaleY(100.00) ;}
