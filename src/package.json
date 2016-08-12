@@ -1,0 +1,16 @@
+{
+  "title": "Kludgy Krawler",
+  "name": "kludgykrawler",
+  "version": "0.0.1",
+  "description": "a web crawler.. that stumbles more than it crawls",
+  "main": "index.js",
+  "author": "Nick Briz && jon.satrom",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "GPL-3",
+  "keywords": [
+    "jetpack"
+  ]
+}
