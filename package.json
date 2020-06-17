@@ -1,0 +1,20 @@
+{
+  "name": "kludgykrawler2.0",
+  "version": "2.0.0",
+  "description": "a web crawler... that stumbles more than it crawls",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . 'kluddgyKrawler' --out=dist --asar --icon './icons/kk-icon.icns' --overwrite"
+  },
+  "author": "Nick Briz <nickbriz@protonmail.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron": "^9.0.3",
+    "electron-packager": "^14.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
