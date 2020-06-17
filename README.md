@@ -1,5 +1,5 @@
-# kludgyKrawler v1.0
-a web crawler... that stumbles more than it crawls
+# kludgyKrawler v2.0
+a web crawler... that stumbles more than it crawls (check out the [addon](https://github.com/nbriz/kludgykrawler/tree/addon) branch for the older/depreciated addon version of kludgyKrawler v1.0)
 
 [DOWNLOADABLE BINARIES COMING SOON]
 
