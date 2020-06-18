@@ -11,10 +11,10 @@ function createWindow () {
   const wa = screen.getPrimaryDisplay().workArea
 
   win = new BrowserWindow({
-    width: wa.width / 2,
-    height: wa.height / 2,
-    x: wa.x + wa.width / 4 + 20,
-    y: wa.y + wa.height / 4 + 20,
+    width: Math.floor(wa.width / 2),
+    height: Math.floor(wa.height / 2),
+    x: Math.floor(wa.x + wa.width / 4 + 20),
+    y: Math.floor(wa.y + wa.height / 4 + 20),
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true
@@ -23,10 +23,10 @@ function createWindow () {
   })
 
   stats = new BrowserWindow({
-    width: wa.width / 8,
-    height: wa.height / 2.5,
-    x: wa.x + wa.width / 4 - 20,
-    y: wa.y + wa.height / 4 - 20,
+    width: Math.floor(wa.width / 8),
+    height: Math.floor(wa.height / 2.5),
+    x: Math.floor(wa.x + wa.width / 4 - 20),
+    y: Math.floor(wa.y + wa.height / 4 - 20),
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true
