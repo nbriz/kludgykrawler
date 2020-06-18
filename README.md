@@ -1,4 +1,4 @@
-![kludgyKrawler](icons/icon.png)
+![kludgyKrawler](icons/kludgykrawler-poster.png)
 
 # kludgyKrawler v2.0
 
