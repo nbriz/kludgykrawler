@@ -44,8 +44,8 @@ function fixURL (url) {
 function updateWindow (url) {
   win.loadURL(url)
   LIST.push(url)
-  const css = fs.readFileSync('./files/garble.css').toString()
-  const js = fs.readFileSync('./files/garble.js').toString()
+  const css = fs.readFileSync(`${__dirname}/files/garble.css`).toString()
+  const js = fs.readFileSync(`${__dirname}/files/garble.js`).toString()
   win.webContents.on('did-finish-load', () => {
     win.webContents.insertCSS(css)
     win.webContents.executeJavaScript(js)
