@@ -2,6 +2,11 @@
   -webkit-font-smoothing: antialiased;
 }
 
+::selection {
+  color: #333;
+  background: #00ff00;
+}
+
 div {
   animation:bgfudge 1s linear infinite;
   background-size: 100% 100%;
