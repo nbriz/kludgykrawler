@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . 'kluddgyKrawler' --out=dist --asar --icon './icons/kk-icon.icns' --overwrite"
+    "build": "electron-packager . 'kluddgyKrawler' --out=dist --icon './icons/icon' --overwrite"
   },
   "author": "Nick Briz <nickbriz@protonmail.com>",
   "license": "GPL-3.0",

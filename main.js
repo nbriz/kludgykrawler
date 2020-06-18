@@ -18,7 +18,8 @@ function createWindow () {
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
+    icon: `${__dirname}/icons/icon.png`
   })
 
   stats = new BrowserWindow({
@@ -29,7 +30,8 @@ function createWindow () {
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
+    icon: `${__dirname}/icons/icon.png`
   })
   stats.loadFile('index.html')
   // stats.webContents.openDevTools()
